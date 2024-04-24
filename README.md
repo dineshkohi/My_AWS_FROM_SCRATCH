@@ -15,10 +15,10 @@ Cloud Deployment Models-
 
 Computing- to perform any data manuplation.
 
-Interview Question: are we create the instance without key?
+1> Interview Question: are we create the instance without key? if yes how to access via putty.
 yes we can create the instance without key and access the instance with AWS console only. we can change the settings create the user and password. once user and password created than we can access the intance through Putty.
 
-when .pem and .ppk
+when .pem and .ppk keys use?
 .pem -- when OS is linux in your laptop
 .ppk -- when OS is windows in your laptop
 
