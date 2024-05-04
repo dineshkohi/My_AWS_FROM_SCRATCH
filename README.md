@@ -30,11 +30,21 @@ Conversion of .pe, to .ppk
 3> Select your PEM file and PuTTYGen will import it.
 4> Click Save Private Key and PuTTYGen will convert the PEM to a PPK file.
 
- ![Uploading image.png…]()
+ ![image](https://github.com/dineshkohi/My_AWS_FROM_SCRATCH/assets/45698578/4cd24744-9cc4-4d4d-99ea-00cb56a93584)
 
 
+Upload the .ppk into putty for connection-
+1> open putty.
+2> go to SSh--> auth-->credentials
+
+![image](https://github.com/dineshkohi/My_AWS_FROM_SCRATCH/assets/45698578/3d120d68-ff3a-441e-8bb3-213fad5b5937)
 
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Instance Setting:
+
+![Uploading image.png…]()
 
 
 
