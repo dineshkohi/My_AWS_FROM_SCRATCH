@@ -22,3 +22,22 @@ when .pem and .ppk keys use?
 .pem -- when OS is linux in your laptop
 .ppk -- when OS is windows in your laptop
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Conversion of .pe, to .ppk
+1> open PuTTYGen and click the Load button
+2> Set the filetype to *.* so the AWS PEM file is visible
+3> Select your PEM file and PuTTYGen will import it.
+4> Click Save Private Key and PuTTYGen will convert the PEM to a PPK file.
+
+ ![Uploading image.png…]()
+
+
+
+
+
+
+
+
+
+
