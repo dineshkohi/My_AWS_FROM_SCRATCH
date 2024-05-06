@@ -44,16 +44,13 @@ Upload the .ppk into putty for connection-
 
 Instance Setting:
 
-![image](https://github.com/dineshkohi/My_AWS_FROM_SCRATCH/assets/45698578/feef2d07-3924-43b7-9941-dc9c123bc179)
-
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
 
 How the dig work-
 *****************
 root servers details link- https://www.iana.org/domains/root/servers
-
+![image](https://github.com/dineshkohi/My_AWS_FROM_SCRATCH/assets/45698578/feef2d07-3924-43b7-9941-dc9c123bc179)
 ![image](https://github.com/dineshkohi/My_AWS_FROM_SCRATCH/assets/45698578/cf07df5e-7b8e-4996-b90a-61cefc0eba7e)
 ![Uploading image.png…]()
 
