@@ -47,6 +47,127 @@ Instance Setting:
 ![Uploading image.png…]()
 
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+How the dig work-
+*****************
+root servers details link- https://www.iana.org/domains/root/servers
+
+
+[ec2-user@ip-172-31-30-254 ~]$ dig bescom.com @198.41.0.4
+
+; <<>> DiG 9.16.48-RH <<>> bescom.com @198.41.0.4
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50568
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 13, ADDITIONAL: 27
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;bescom.com.                    IN      A
+
+;; AUTHORITY SECTION:
+com.                    172800  IN      NS      l.gtld-servers.net.
+com.                    172800  IN      NS      j.gtld-servers.net.
+com.                    172800  IN      NS      h.gtld-servers.net.
+com.                    172800  IN      NS      d.gtld-servers.net.
+com.                    172800  IN      NS      b.gtld-servers.net.
+com.                    172800  IN      NS      f.gtld-servers.net.
+com.                    172800  IN      NS      k.gtld-servers.net.
+com.                    172800  IN      NS      m.gtld-servers.net.
+com.                    172800  IN      NS      i.gtld-servers.net.
+com.                    172800  IN      NS      g.gtld-servers.net.
+com.                    172800  IN      NS      a.gtld-servers.net.
+com.                    172800  IN      NS      c.gtld-servers.net.
+com.                    172800  IN      NS      e.gtld-servers.net.
+
+;; ADDITIONAL SECTION:
+l.gtld-servers.net.     172800  IN      A       192.41.162.30
+l.gtld-servers.net.     172800  IN      AAAA    2001:500:d937::30
+j.gtld-servers.net.     172800  IN      A       192.48.79.30
+j.gtld-servers.net.     172800  IN      AAAA    2001:502:7094::30
+h.gtld-servers.net.     172800  IN      A       192.54.112.30
+h.gtld-servers.net.     172800  IN      AAAA    2001:502:8cc::30
+d.gtld-servers.net.     172800  IN      A       192.31.80.30
+d.gtld-servers.net.     172800  IN      AAAA    2001:500:856e::30
+b.gtld-servers.net.     172800  IN      A       192.33.14.30
+b.gtld-servers.net.     172800  IN      AAAA    2001:503:231d::2:30
+f.gtld-servers.net.     172800  IN      A       192.35.51.30
+f.gtld-servers.net.     172800  IN      AAAA    2001:503:d414::30
+k.gtld-servers.net.     172800  IN      A       192.52.178.30
+k.gtld-servers.net.     172800  IN      AAAA    2001:503:d2d::30
+m.gtld-servers.net.     172800  IN      A       192.55.83.30
+m.gtld-servers.net.     172800  IN      AAAA    2001:501:b1f9::30
+i.gtld-servers.net.     172800  IN      A       192.43.172.30
+i.gtld-servers.net.     172800  IN      AAAA    2001:503:39c1::30
+g.gtld-servers.net.     172800  IN      A       192.42.93.30
+g.gtld-servers.net.     172800  IN      AAAA    2001:503:eea3::30
+a.gtld-servers.net.     172800  IN      A       192.5.6.30
+a.gtld-servers.net.     172800  IN      AAAA    2001:503:a83e::2:30
+c.gtld-servers.net.     172800  IN      A       192.26.92.30
+c.gtld-servers.net.     172800  IN      AAAA    2001:503:83eb::30
+e.gtld-servers.net.     172800  IN      A       192.12.94.30
+e.gtld-servers.net.     172800  IN      AAAA    2001:502:1ca1::30
+
+;; Query time: 0 msec
+;; SERVER: 198.41.0.4#53(198.41.0.4)
+;; WHEN: Mon May 06 11:54:55 UTC 2024
+;; MSG SIZE  rcvd: 835
+
+[ec2-user@ip-172-31-30-254 ~]$ dig bescom.com @192.41.162.30
+
+; <<>> DiG 9.16.48-RH <<>> bescom.com @192.41.162.30
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 38174
+;; flags: qr rd; QUERY: 1, ANSWER: 0, AUTHORITY: 2, ADDITIONAL: 3
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;bescom.com.                    IN      A
+
+;; AUTHORITY SECTION:
+bescom.com.             172800  IN      NS      ns1.bodis.com.
+bescom.com.             172800  IN      NS      ns2.bodis.com.
+
+;; ADDITIONAL SECTION:
+ns1.bodis.com.          172800  IN      A       185.85.196.36
+ns2.bodis.com.          172800  IN      A       199.59.243.150
+
+;; Query time: 19 msec
+;; SERVER: 192.41.162.30#53(192.41.162.30)
+;; WHEN: Mon May 06 11:55:46 UTC 2024
+;; MSG SIZE  rcvd: 113
+
+[ec2-user@ip-172-31-30-254 ~]$ dig bescom.com @185.85.196.36
+
+; <<>> DiG 9.16.48-RH <<>> bescom.com @185.85.196.36
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12228
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;bescom.com.                    IN      A
+
+;; ANSWER SECTION:
+bescom.com.             10800   IN      A       199.59.243.225
+
+;; Query time: 9 msec
+;; SERVER: 185.85.196.36#53(185.85.196.36)
+;; WHEN: Mon May 06 11:56:12 UTC 2024
+;; MSG SIZE  rcvd: 55
+
+[ec2-user@ip-172-31-30-254 ~]$
+
 
 
 
